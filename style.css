@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+/* GLOBAL STYLES */
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Space Mono', monospace;
+    overflow:inherit;
+    color: #D4C05E;
+    background-color: #333335;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    height: 100%;
+    padding-top:1%;
+}
+
+h2 {
+    font-weight: 300;
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+h4 {
+    margin: 10px;
+}
+p {
+    margin: 5px;
+}
+a {
+    text-decoration: none;
+    color: #D4C05E;
+}
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+strong {
+    font-weight: 900;
+}
+
+.scroll-page {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display:block;
+    padding: 5px 10px;
+    color: #FFF;
+    font-weight: 100;
+    font-size: 20px;
+    border: 1px solid #fff;
+}
+.scroll-page2 {
+    margin: 0 auto;
+    bottom: 10px;
+    display:block;
+    padding: 5px 10px;
+    color: #000;
+    font-weight: 100;
+    font-size: 20px;
+    border: 1px solid #000;
+    text-align: center;
+    width:40px;
+}
+
+.scroll-page:hover {
+    background-color: #FFF;
+    color: #000; 
+}
+.scroll-page2:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.img-responsive {
+    width: 100%;
+    height: 100%;
+}
+
+.bordered {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 5px;
+}
+
+.heading { 
+    position: static;
+    width: 200px;
+    margin: 90px auto;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.subheading { 
+    display: block;
+    position: static;
+    margin: 0 auto;
+    width: 200px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.row:before,
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+[class*="col-"] {
+    width:100%;
+    padding:12px;
+    float:left;
+    text-align: center;
+ 
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+
+/* NAVIGATION STYLES */
+nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    float:right;
+}
+nav ul:after {
+    clear: both;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 16px;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* HEADER STYLES */
+header {
+    color: #D4C05E;
+    margin: 50px 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background-image: url(images/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.slogan {
+    text-align: center;
+    width: 600px;
+    height: 500px;
+    padding: 20px;
+    color: #D4C05E;
+    position:relative;
+    top: 20vh;
+    left: 45vw;
+}
+.slogan h1 {
+    font-weight:200;
+    font-size: 70px;
+    margin:20px;
+}
+
+.slogan  p {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 35px;
+    text-align: center;
+}
+
+.this-arrow {
+    display: block;
+    font-weight: 900;
+}
+
+/* ABOUT ME STYLES */
+#about-me {
+    color: #D4C05E;
+    height: 100%;
+}
+
+#about-me h3 {
+    color: #d61e1b;
+}
+
+#about-me img {
+    width: 550px;
+}
+
+.cv-dwnld {
+    background-color: #d61e1b;
+    color: #000;
+    border: 1px solid #000;
+    padding: 15px;
+    margin: 30px 20px;
+    float:right;
+    cursor: pointer;
+    transition: 1s;
+}
+.cv-dwnld:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* SKILLS STYLES */
+
+#my-skills i {
+    display:block;
+    margin: 10px;
+    font-size: 50px;
+}
+
+#my-skills h3 {
+    color: #d61e1b;
+}
+
+/* PROJECTS STYLES */
+#my-projects {
+    display:block;
+    margin-bottom: 50px;
+
+}
+#my-projects h4, p {
+    text-align: left;
+}
+#my-projects h4 {
+    font-weight: 800;
+}
+#my-projects p {
+    font-weight: 500;
+    color: #d61e1b;
+}
+.subtitle {
+    border-bottom: 1px solid #000;
+    margin: 0;
+    padding: 0;
+}
+
+.project {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+.project-img {
+    transition: filter .6s ease-in-out;
+}
+.project-description {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    opacity: 0;
+    transition: opacity .6s ease-in-out;
+}
+.project:hover .project-description {
+    opacity: 1;
+}
+.project .fa {
+    display: inline-block;
+}
+.project .fa:hover {
+    cursor: pointer;
+}
+.fa-lg {
+    background-color: #fff;
+    display:block;
+    color: #000;
+    border: 0px #fff;
+    padding: 15px;
+    margin: 25% auto;
+}
+.fa-lg:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+
+/* WHY ME?! STYLES */
+
+#whyme {
+    width: 100%;
+    margin: 0 auto;
+    height: 400px;
+    display: block;
+    background-image: url(images/whyme.jpeg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#whyme p,
+#whyme h2 {
+    color: black;
+    font-weight: bold;
+    background-color: #c1bdbd;
+    opacity: 0.8;
+}
+
+.slogan2 {
+    text-align: center;
+    width: 500px;
+    padding: 10px;
+    color: #fff;
+    position: relative;
+    top: 10%;
+    right: -50%;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    
+}
+
+
+/* CONTACT STYLES */
+
+#contact {
+    margin-bottom: 50px;
+
+}
+.contact-box {
+    border: 1px solid #000;
+    margin: 10px 0;
+    font-size: 20px;
+    font-weight: 100;
+    height: 100px
+    line-height: 100px;
+    text-align:center;
+}
+
+
+.contact-box a {
+    text-decoration-style: none;
+    padding: 20px;
+}
+
+#contact h5 {
+    font-weight: 300;
+}
+.contact-icon {
+    border-right: 1px solid #000;
+    padding: 30px;
+    line-height: inherit;
+    font-size:30px;
+}
+
+.form-control {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #000;
+}
+.form-msg:focus {
+    border-color: grey;
+}
+.form-msg {
+    height: 160px;
+}
+.btn-submit {
+    padding:10px 15px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.form-group input {
+    text-align: center;
+}
+
+
+/* FOOTER STYLE */
+
+footer {
+    position: static;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+}
+
+
+/* R W D */
+
+@media (max-width: 900px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+     
+    [class*="col-"]{
+        display:block;
+    }
+    .heading {
+        margin: 0 auto;
+        width: auto;
+    }
+    .container {
+        height: auto;
+        width: 100%;
+    }
+    .heading {
+        margin: 20px;
+    }
+    
+    nav {
+        text-align:center;
+        height:200px;
+        line-height:1px;
+        position:absolute;
+     
+    }
+    nav ul {
+        float:none
+           
+    }
+    nav ul li {
+        display:block;
+         line-height:1px;
+    }
+    nav ul li a {
+        display:block;
+        line-height:30px;
+        padding:4px 0;
+    }
+    
+    header {
+        width: 100%;
+        margin-top :200px;
+        height: 350px;
+    }
+
+    .slogan {
+        text-align: center;
+        width: 100%;
+        color: #fff;
+        position: relative;
+        top: 0;
+        left: 0%;
+    }
+
+    .scroll-page {
+        position: static;
+        margin: 0 auto;
+        width: 50px;
+        text-align: center;
+        bottom: 20%;
+        left: 45%;
+    }
+    #about-me h3 {
+        margin-top: -30px;
+    }
+    #about-me p {
+        text-align: center;
+    }
+    .scroll-page2 {
+        display: none;
+    }
+    .cv-dwnld {
+        float: none;
+    }
+    .aboutme-img {
+        display: none;
+    }
+    .bordered {
+        border-top: none;
+    }
+    #my-skills {
+        background-color: #000;
+        color: #FFF;
+        padding: 10px;
+    }
+    .project-description {
+        opacity: 1;
+    }
+    #whyme {
+        height: 350px;
+    }
+
+    .slogan2  {
+        width: auto;
+        height: 350px;
+        top: 0;
+        left: 0;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 2px;
+        background-color: rgba(0,0,0,0.7);
+    }
+    .slogan2 p {
+        text-align: center;
+        position: relative;
+    }
+    .form-control {
+        width: 100%;
+        height: 30px;
+    }
+    .form-msg {
+        height: 100px;
+    }
+    #contact {
+        padding: 5px;
+    }
+    .contact-box {
+        height: 150px;
+        font-size: 15px;
+    }
+    .contact-box h5 {
+        padding:0;
+        font-size:15px;
+
+    }
+    .contact-icon {
+        padding: 0;
+        border: none;
+    }
+     .bounceInRight, .bounceInLeft, .fadeInLeft {
+        animation-name: none;
+        animation-duration: 0;
+    }
+    
+
+}   
+    
+@media (min-width: 901px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
